@@ -144,7 +144,7 @@ Note how SOAP request and responses are different for sum, add and multiply serv
 8. Return response to client.
 
 Here is a visual camel route of calculate service:<br/>
-![Camel Route](https://github.com/igl100/JBossFuseWSDemo/blob/master/docs/image/Capture0.png)
+![Camel Route](https://github.com/igl100/FuseWSDemo/blob/master/docs/image/Capture0.png)
 
 ## Objectives
 
