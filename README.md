@@ -247,4 +247,10 @@ We need to create a broker that use both profiles created in the last steps to a
 
 Notices how we define wscalculator and wscalculate profiles as parents.
 
+# Use Soap UI to invoke the services
 
+At this point, the services should be exposed and ready to be invoked. Use Soap UI config files provided on this demo (Inside soapui directory) to import request and execute client.<br/><br/>
+
+Have fun!!
+
+ 
