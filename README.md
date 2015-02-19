@@ -221,3 +221,30 @@ Before running JBoss Fuse for the first time we need to configure user/password 
     ![Fabric Home](https://github.com/igl100/JBossFuseHADemo/blob/master/docs/image/Capture5.png)
     <br/>
     ![Fabric Containers](https://github.com/igl100/JBossFuseHADemo/blob/master/docs/image/Capture6.png)
+
+# Deploy wscalculator profile
+
+This project contains the definition of sum, add and multiply services. In order to deploy: 
+ * On a terminal go to demo projects directory: `cd <FuseWADemoDir>/projects/wscalculator`
+ * Run: `mvn clean install fabric8:deploy`
+
+Wait for success deployment. You can see the new created profile using web console.
+
+# Deploy wscalculate profile
+
+This project contains the definition of calculate services. In order to deploy: 
+
+ * On a terminal go to demo projects directory: `cd <FuseWADemoDir>/projects/wscalculate`
+ * Run: `mvn clean install fabric8:deploy`
+
+Wait for success deployment. You can see the new created profile using web console.
+
+# Create a camel broker
+
+We need to create a broker that use both profiles created in the last steps to actually expose all the services.
+
+* `fabric:container-create-child --profile wscalculator --profile wscalculate root WSBroker`
+
+Notices how we define wscalculator and wscalculate profiles as parents.
+
+
