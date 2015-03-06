@@ -101,7 +101,7 @@ SOAP Response: <br/>
 </soapenv:Envelope>
 ```
 * Calculate Web Service: It will be created using **Contract first** approach. SOAP request will receive two numbers, a sender name and an operation type. The operation type can be **sum**, **add** or **multiply**. The service will return the resulting operation and an operation id constant **completed**.  <br/>
-The wsdl definition will be available at `http://localhost:9000/calculate/?wsdl`.<br/>
+The wsdl definition will be available at `http://localhost:9001/calculate/?wsdl`.<br/>
 This is a SOAP Request and SOAP Response example:<br/>
 SOAP Request: <br/>
 ```XML
