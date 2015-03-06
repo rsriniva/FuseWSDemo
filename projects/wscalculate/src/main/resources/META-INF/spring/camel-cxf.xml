@@ -12,7 +12,7 @@
 	<bean id="loggingInInterceptor" class="org.apache.cxf.interceptor.LoggingInInterceptor"/>
 
 	<cxf:cxfEndpoint id="calculateEndpoint"
-		address="http://localhost:9000/calculate/" serviceClass="com.redhat.fuse.demos.ws.wssuma.CalculateEndpoint"
+		address="http://localhost:9001/calculate/" serviceClass="com.redhat.fuse.demos.ws.wssuma.CalculateEndpoint"
 		wsdlURL="wsdl/wscalc.wsdl" />
 
 	<cxf:cxfEndpoint id="wsAddService"
